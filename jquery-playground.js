@@ -89,18 +89,52 @@ $(document).ready(function(){
 $(function(){
 
   // ATTR METHOD
+  // in jQuery you can set attributes AND retrieve them
+  // Alert what the first attribute class
+  //alert($('p:first').attr('class'));
+  // Change an Attribute
   //$('p:first').attr('class', 'not-lead');
 
   // IMAGE SWAP
   //$('img').attr('src', 'img2.jpg');
-  // $('img').delay(400).fadeOut(500, function(){
-  //   $(this).attr('src', 'img2.jpg').fadeIn(500);
-  // });
+  // (This) whatever the function is called on in jQuery
+  // FadeOut, change the source and Fade it in
+
+  //$('img').delay(400).fadeOut(500, function(){
+  //  $(this).attr('src', 'img2.jpg').fadeIn(500);
+  //});
 
   // CLASS METHODS
+  // If you're good with CSS this can be one of the most powerful
+  // things to use jQuery to manipulate how the page is structured
+  // jQuery can ask things if it has a class
+  //alert($('p:last').hasClass('lead'));
+  //alert($('p:first').hasClass('lead'));
+  // add Class
+  //$('p').addClass('blue').removeClass('lead');
+  // toggleClass This is a great way to do drop down menus
+  // or tabs or anything that you need to switch the state
   //$('p').toggleClass('blue').removeClass('lead');
 
   // CONTENT METHODS
+  // jQuery uses this to look at the content of the things
+  // for example what is in a paragraph tag
+  // alert to tell us what the text is
+  //alert($('p:first').text());
+  // text used to change the content of the p:first
+  //$('p:first').text('Hey you guuuuuyyyyyyyssss!');
+  // text is the way that you pull text out of an element
+  // you can use the method text to insert inside a DOM
+  //When adding html tags to a content method change text()
+  // to html() so the html is read properly
+  //$('p:first').html('heey there <em>buddy</em>');
+  // Form element
+  //alert($('input').val());
+  // can store content or store user input
+  // not only can you gather the information, but you can set it
+  //$('input').val('yo dude!');
+
+
   //$('p:first').html('<a href="google.com">link</a>');
   // $('input').val('yo dude!');
 
